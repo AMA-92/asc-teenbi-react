@@ -1,21 +1,6 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/static/(.*)",
-      "headers": {
-        "cache-control": "s-maxage=31536000, immutable"
-      }
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/"
-    }
-  ]
+  "rootDirectory": "asc-guney-mobile",
+  "buildCommand": "npm run build",
+  "outputDirectory": "build",
+  "framework": "create-react-app"
 }
